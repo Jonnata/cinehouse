@@ -1,11 +1,11 @@
 //programa que simula um sistema de gerenciamento de um cinema (CineHouse)
 //que possui um catálogo de filmes e que permite a locação de filmes. 
 
-const catalogo = require("./database/catalogo.json")
+const catalog = require("./database/catalog.json")
 var cinehouse = "DH"
 
 
-// const catalogo = [
+// const catalog = [
 //   {
 //     codigo: 1,
 //     titulo: 'Harry Potter e a Ordem da Fênix',
@@ -25,7 +25,7 @@ var cinehouse = "DH"
 // ]
 
 function adicionarFilme(codigo, titulo, duracao, atores, anoDeLancamento, emCartaz) {
-  catalogo.push(
+  catalog.push(
     {
     codigo,
     titulo,
@@ -38,7 +38,7 @@ function adicionarFilme(codigo, titulo, duracao, atores, anoDeLancamento, emCart
 }
 // = >
 function buscarFilme(identificador) {
-  const filme = catalogo.find((objeto) => objeto.codigo == identificador)
+  const filme = catalog.find((objeto) => objeto.codigo == identificador)
 
   return filme
 }
@@ -47,7 +47,7 @@ function buscarFilme(identificador) {
 // !true = false
 // !false = true
 // const alterarStatusEmCartaz = (codigoDoFilme) => {
-//   const filmeParaAlterar = catalogo.find((filme) => filme.codigo == codigoDoFilme)
+//   const filmeParaAlterar = catalog.find((filme) => filme.codigo == codigoDoFilme)
   
 //   filmeParaAlterar.emCartaz = !filmeParaAlterar.emCartaz
 
@@ -59,9 +59,9 @@ function buscarFilme(identificador) {
 function listarTodosOsFilmes() {
   // let listaFilmes = []
 
-  for (let index = 0; index < catalogo.length; index++) {
-    // listaFilmes.push(catalogo[index])
-    console.log(catalogo[index])
+  for (let index = 0; index < catalog.length; index++) {
+    // listaFilmes.push(catalog[index])
+    console.log(catalog[index])
   }
 
   // return listaFilmes
@@ -69,18 +69,18 @@ function listarTodosOsFilmes() {
 
 function listarFilmesEmCartaz() {
   for (let index = 0; index < catalogo.length; index++) {
-    catalogo[index].emCartaz ? 
-      console.log(catalogo[index]) 
+    catalog[index].emCartaz ? 
+      console.log(catalog[index]) 
       : null
   }
 }
 
 function alterarStatusEmCartaz(codigo) {
   let filmeAlterado
-  for (let index = 0; index < catalogo.length; index++) {
-    if (catalogo[index].codigo == codigo) {
-      catalogo[index].emCartaz = !catalogo[index].emCartaz
-      filmeAlterado = catalogo[index]
+  for (let index = 0; index < catalog.length; index++) {
+    if (catalog[index].codigo == codigo) {
+      catalog[index].emCartaz = !catalog[index].emCartaz
+      filmeAlterado = catalog[index]
     }
   }
 
@@ -95,7 +95,7 @@ function alterarStatusEmCartaz(codigo) {
 
 // adicionarFilme(3, 'Lilo e Stitch', 1.5, ['Lilo', 'Stitch'], 2002, false)
 
-// // // console.log(catalogo)
+// // // console.log(catalog)
 // console.log('Seu filme é: ', buscarFilme(2))
 // console.log('Seu filme alterado é: ', alterarStatusEmCartaz(1))
 
