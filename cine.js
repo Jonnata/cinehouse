@@ -1,3 +1,6 @@
+//programa que simula um sistema de gerenciamento de um cinema (CineHouse)
+//que possui um catálogo de filmes e que permite a locação de filmes. 
+
 const catalogo = require("./database/catalogo.json")
 var cinehouse = "DH"
 
