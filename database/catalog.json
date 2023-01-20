@@ -14,51 +14,5 @@
         "atores": ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
         "anoDeLancamento": 2009,
         "emCartaz": false
-      },
-      {
-        "codigo": 3,
-        "titulo": "Harry Potter e as Relíquias da Morte - Parte 1",
-        "duracao": 2,
-        "atores": ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
-        "anoDeLancamento": 2010,
-        "emCartaz": false
-      },
-      {
-        "codigo": 4,
-        "titulo": "Harry Potter e as Relíquias da Morte - Parte 2",
-        "duracao": 2,
-        "atores": ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
-        "anoDeLancamento": 2011,
-        "emCartaz": false
-      },
-      {
-        "codigo": 5,
-        "titulo": "Harry Potter e o Cálice de Fogo",
-        "duracao": 2,
-        "atores": ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
-        "anoDeLancamento": 2005,
-        "emCartaz": false
-      },
-      {
-        "codigo": 6,
-        "titulo": "Harry Potter e o Prisioneiro de Azkaban",
-        "duracao": 2,
-        "atores": ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
-        "anoDeLancamento": 2004,
-        "emCartaz": false
-      },
-      {
-        "codigo": 7,
-        "titulo": "Harry Potter e a Pedra Filosofal",
-        "duracao": 2,
-        "atores": ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"],
-        "anoDeLancamento": 2001,
-        "emCartaz": false
-      },
-      {
-        "codigo": 8,
-        "titulo": "Harry Potter e o Cálice de Fogo",
-        "duracao": 2,
-        "atores": ["Daniel Radcliffe", "Emma Watson", "Rupert Grint"]
       }
 ]
